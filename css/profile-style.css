@@ -1,0 +1,207 @@
+@import url('common.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
+
+/*Noto Sans KR*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+body{
+    width:100%;
+}
+.wrap{
+    position:relative;
+    left:0; top:0;
+    width:100%; height: 100vh;
+}
+header{
+    width:100%;
+	position:fixed;
+	left:0; top:0;
+	font-size:0;
+	z-index: 100;
+}
+header a{
+    width:10%; 
+    position:absolute;
+    left: 1%; top:0%;
+    margin-top:1%;
+}
+header a img{
+    width:50%;
+    opacity:.4;
+}
+header a img:hover{
+    opacity:1;
+}
+section{
+    width:100%; height: 100%;
+    background: #061f35 url('../img/twk_bg.png') no-repeat;
+}
+#main{
+    width:90%; height: 85%;
+    position:relative;
+    left:5%; top:11%;
+    background: #03004c;
+    opacity: .3;
+    border:.5px solid white;
+}
+#main-bg{
+    width:90%; height: 85%;
+    position:absolute;
+    left:6%; top:9%;
+    background: #03004c;
+    opacity: .3;
+    border:.5px solid white;
+}
+#profile{
+    float:left;
+    position:absolute;
+    left:10%; top:20%;
+}
+#profile .left-con{
+    width:100%; height: 100%;
+}
+
+#profile .left-con img{
+    width:100%;
+}
+#profile .left-con p{
+    width:100%;
+    position:absolute;
+    left:0%; top:80%;
+    white-space: pre-line;
+    color:white;
+    font-size:3.5rem;
+    font-weight: 700;
+}
+
+#profile .profile-txt{
+    width:100%;
+    position:absolute;
+    left:102%; top:0;
+}
+#profile .profile-txt strong{
+    color:white;
+    font-size:2.2rem;
+    font-weight: 600;
+    font-family: 'Tajawal', sans-serif;
+}
+#profile .profile-txt span{
+    position: absolute;
+    left:0%; top:100%;
+    width:124px; height: 5px;
+    background: white;
+    opacity: .4;
+}
+
+#profile .career-txt{
+    width:100%;
+    position:absolute;
+    left:102%; top:50%;
+}
+#profile .career-txt strong{
+    color:white;
+    font-size:2.2rem;
+    font-weight: 600;
+    font-family: 'Tajawal', sans-serif;
+}
+#profile .career-txt span{
+    position: absolute;
+    left:0%; top:100%;
+    width:124px; height: 5px;
+    background: white;
+    opacity: .4;
+}
+#pro-txt{
+    position:absolute;
+    left:41%; top:20.5%;
+}
+
+#pro-txt .pro-detail p{
+    color:white;
+    white-space: pre-line;
+    font-size:1.3rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing:.8px;
+    margin-bottom: 7.5%;
+}
+
+#pro-txt .car-detail p{
+    color:white;
+    white-space: pre-line;
+    font-size:1.3rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing:.8px;
+    margin-bottom: 7.5%;
+}
+#pro-txt .skill p{
+    color:white;
+    white-space: pre-line;
+    font-size:1.3rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing:.8px;
+}
+#pro-txt .skill ul{
+    display: flex;
+    text-align: center;
+}
+#pro-txt .skill ul li{
+    margin-top: 2%;
+    margin-left: -8%;
+}
+#pro-txt .skill ul li img{
+    width:20%;
+}
+
+/*-----------------------------------------*/
+
+#menu{
+    width:100%; 100vh;
+    position:fixed;
+    left:0; top:40%;
+    font-weight: 900;
+}
+#menu .about{
+    float:left;
+    color:white;
+    position: absolute;
+    left:3%; top:0%;
+    font-size:1.2rem;
+    transform: rotate(-90deg) translateY(-150%);
+    border-bottom:2px solid transparent;
+    opacity:.5;
+}
+#menu .about:hover{
+    border-bottom:2px solid white;
+    opacity:1;
+}
+#menu .work{
+    float:right;
+    color:white;
+    position:absolute;
+    right:3%; top:0;
+    font-size:1.2rem;
+    transform: rotate(-270deg) translateY(-150%);
+    border-bottom:2px solid transparent;
+    opacity:.5;
+}
+#menu .work:hover{
+    border-bottom:2px solid white;
+    opacity: 1;
+}
+#contact .contact{
+    color:white;
+    position:absolute;
+    left:50%; bottom:1%;
+    transform:translate(-50%);
+    font-size:1.2rem;
+    font-weight: 900;
+    text-align: center;
+    border-bottom:2px solid transparent;
+    opacity: .5;
+}
+#contact .contact:hover{
+    border-bottom:2px solid white;
+    opacity: 1;
+}
