@@ -1,0 +1,208 @@
+@import url('common.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap');
+
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,600&display=swap');
+
+body{
+    width:100%;
+}
+.wrap{
+    position:relative;
+    left:0; top:0;
+    width:100%; height: 100vh;
+}
+header{
+    width:100%;
+	position:fixed;
+	left:0; top:0;
+	font-size:0;
+	z-index: 100;
+}
+header a{
+    width:10%; 
+    position:absolute;
+    left: 1%; top:0%;
+    margin-top:1%;
+}
+header a img{
+    width:50%;
+    opacity:.4;
+}
+section{
+    position:relative;
+    left:0;top:0;
+    width:100%; height: 100%;
+}
+
+#work{
+    width:100%; height: 100vh;
+    position:relative;
+    left:0; top:0;
+    border: 1px solid yellow;
+}
+#work .work-left{
+    float:left;
+    width:50%; height: 100%;
+    position:relative;
+    left:0; top:0;
+    border:1px solid red;
+}
+#work .work-left .img{
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+}
+#work .work-left .img img{
+    width:100%; height: 100%;
+}
+#work .work-left .letter{
+    position:relative;
+    left:10%; top:10%;
+    width:80%; height:80%;
+}
+#work .work-left .letter img:nth-of-type(1){
+    position:absolute;
+    left:5%; top:20%;
+}
+#work .work-left .letter img:nth-of-type(2){
+    position:absolute;
+    left:20%; top:48%;
+}
+#right-worklist{
+    float:right;
+    width:50%; height: 100%;
+    position:absolute;
+    right:0; top:0;
+    border:1px solid cyan;
+    background: #2b211f;
+}
+
+#right-worklist .list{
+    position: absolute;
+    right:15%; top:10%;
+    width:70%; height: 80%;
+    display: flex;
+    flex-direction: column;
+}
+#right-worklist .list small{
+    font-size:1.15rem;
+    font-weight: 600;
+    color:white;
+    opacity: .5;
+    text-align: center;
+    margin-bottom: 20%;
+    font-family: 'Open Sans', sans-serif;
+}
+#right-worklist .list .UI-UX{
+    padding-bottom: 3%;
+}
+#right-worklist .list .UI-UX b{
+    color:white;
+    font-size:1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    opacity: .5;
+}
+#right-worklist .list .UI-UX b:hover{
+    opacity: 1;
+    border-bottom: 3px solid white;
+}
+#right-worklist .list a p{
+    color:white;
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.5rem;
+    font-weight: 600;
+    margin-bottom: 4%;
+    line-height:50px;
+}
+#right-worklist .list a p strong{
+    color:white;
+    font-size:2.2rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 20px;
+}
+#right-worklist .list a p:hover strong{
+   
+    border-bottom: 3px solid rgba(225,225,225,1);
+}
+
+#right-worklist .list a p span{
+    color:white;
+    border-radius: 20px;
+    font-size:1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    margin-left: 10px;
+    position:relative;
+    left:0; top:10px;
+    opacity: 0;
+    width:100px; height: 25px;
+    border:1px solid white;
+    text-align: center;
+    align-content: center;
+    
+}
+#right-worklist .list a p:hover span{
+    opacity: 1;
+}
+
+#right-worklist .list .ani b{
+    color:white;
+    font-size:1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    opacity: .5;
+}
+
+
+
+/*--------------------------*/
+#menu{
+    width:100%; 100vh;
+    position:fixed;
+    left:0; top:40%;
+    font-weight: 900;
+}
+#menu .about{
+    float:left;
+    color:white;
+    position: absolute;
+    left:3%; top:0%;
+    font-size:1.2rem;
+    transform: rotate(-90deg) translateY(-150%);
+    border-bottom:2px solid transparent;
+    opacity:.5;
+}
+#menu .about:hover{
+    border-bottom:2px solid white;
+    opacity:1;
+}
+#menu .work{
+    float:right;
+    color:white;
+    position:absolute;
+    right:3%; top:0;
+    font-size:1.2rem;
+    transform: rotate(-270deg) translateY(-150%);
+    border-bottom:2px solid transparent;
+    opacity:.5;
+}
+#menu .work:hover{
+    border-bottom:2px solid white;
+    opacity: 1;
+}
+#contact .contact{
+    color:white;
+    position:fixed;
+    left:50%; bottom:1%;
+    transform:translate(-50%);
+    font-size:1.2rem;
+    font-weight: 900;
+    text-align: center;
+    border-bottom:2px solid transparent;
+    opacity: .5;
+}
+#contact .contact:hover{
+    border-bottom:2px solid white;
+    opacity: 1;
+}

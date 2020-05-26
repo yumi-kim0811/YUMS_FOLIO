@@ -1,11 +1,5 @@
 @import url('common.css');
 
-/*@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap');*/
-
-/*
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@600&display=swap');
-*/
-
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap');
 
 body{
@@ -34,6 +28,8 @@ header a img{
     opacity:.4;
 }
 section{
+    position:relative;
+    left:0;top:0;
     width:100%; height: 100%;
     background: #061f35 url('../img/twk_bg.png') no-repeat;
 }
@@ -67,6 +63,38 @@ section{
 #main img{
     width:100%; height: 100vh;
 }
+.star-twk{
+    width:100%; height: 100vh;
+    position:absolute;
+    left:0; top:0;
+    overflow:hidden;
+}
+.star-twk span:nth-of-type(1){
+    position:absolute;
+    left:100%; top:-20%;
+    animation: star1 20s 2s infinite;
+}
+.star-twk span:nth-of-type(2){
+    position:absolute;
+    left:110%; top:-19%;
+    animation: star2 26s 2s infinite;
+}
+.star-twk span:nth-of-type(3){
+    position:absolute;
+    left:130%; top:27%;
+    animation: star3 26s 2s infinite;
+}
+
+@keyframes star1{
+    100%{left:-28%; top:80%;}
+}
+@keyframes star2{
+    100%{left:-28%; top:81%;}
+}
+@keyframes star3{
+    100%{left:-28%; top:81%;}
+}
+
 #menu{
     width:100%; 100vh;
     position:fixed;
@@ -103,7 +131,7 @@ section{
 }
 #contact .contact{
     color:white;
-    position:absolute;
+    position:fixed;
     left:50%; bottom:1%;
     transform:translate(-50%);
     font-size:1.2rem;
