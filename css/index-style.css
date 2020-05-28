@@ -82,22 +82,19 @@ h1.typing-txt::after{
     font-size:3rem;
     animation: 'slideInUP' 10s;
     text-align: center;
-    width:100%;
-    animation: slideInUP 5s;
+    animation: slideInUP 3s;
 }
 #main div p.slideInUP{
     font-size:1.42rem;
     color:white;
-    margin-top: 0.3%;
     font-family: 'Signika', sans-serif;
     text-align: center;
-    width:100%;
-    animation: slideInUP 5s;
+    animation: slideInUP 3s;
+  
 }
 
-@keyframes slideInUp{
-    0%{transform: translateY(100%)}
-    50%{transform: translateY(50%)}
+@keyframes slideInUP{
+    0%{transform: translateY(200%)}
     100%{transform: translateY(0%)}
 }
 #main img{
