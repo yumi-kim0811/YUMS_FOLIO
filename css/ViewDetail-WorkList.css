@@ -1,0 +1,214 @@
+@import url('common.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@300;600&display=swap');
+
+/*Nanum Gothic*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+/*Roboto*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+/*Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+
+body{
+    width:100%;
+}
+.wrap{
+    position:relative;
+    left:0; top:0;
+    width:100%; height: 100vh;
+}
+header{
+    width:100%;
+	position:fixed;
+	left:0; top:0;
+	font-size:0;
+	z-index: 100;
+}
+header a{
+    width:10%; 
+    position:relative;
+    left: 0%; top:0%;
+    margin-top:.5%;
+}
+header a img{
+    width:35%;
+    opacity:.4;
+}
+section{
+    position:relative;
+    left:0;top:0;
+    width:100%; height: 100vh;
+}
+#content-worklist{
+    width:100%; height: 100%;
+    position:relative;
+    left:0; top:0;
+}
+#content-worklist .bg{
+    position:absolute;
+    left:0; top:0;
+}
+#content-worklist .bg img{
+    width:100%;
+}
+#content-worklist .bg img:nth-of-type(1){
+}
+#content-worklist .bg img:nth-of-type(2){
+    position: absolute;
+    left:0; top:0;
+}
+#content-worklist .img-product{
+    position:absolute;
+    left:50%; top:0;
+    transform: translateX(-50%);
+    margin-top: 10%;
+    width:52%;
+}
+#content-worklist .img-product img{
+    width:100%; height: 100%;
+    margin-bottom: 1.5%;
+}
+#content-worklist .img-product img:nth-of-type(2){
+    position:absolute;
+    left:0; top:0;
+}
+#content-worklist .img-product a{
+    width:200px; height:36px;
+    background: #31004a;
+    color:white;
+    font-size:1.25rem;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    left:50%; top:100%;
+    transform: translateX(-50%);
+}
+#content-worklist .project-txt{
+    width:50%; height: 20%;
+    position:absolute;
+    left:50%; top:72.5%;
+    transform: translateX(-50%);
+    white-space: pre-line;
+    border:1px solid green;
+    padding: 10px;
+}
+#content-worklist .project-txt em{
+    font-size:1rem;
+    font-weight: 900;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+#content-worklist .project-txt strong{
+    font-size:2.2rem;
+    font-family: 'Poppins', sans-serif;
+}
+#content-worklist .project-txt .click-changes{
+    font-size:1.2rem;
+    background: #b6b6b6;
+    color:white;
+    padding: 2px 20px;
+    float:left;
+    position:absolute;
+    left:23%; top:25%;
+}
+#content-worklist .project-txt .left-arrow{
+    color:white;
+    background: #b6b6b6;
+    font-size:1.4rem;
+    font-weight: 900;
+    position:absolute;
+    left:50%; top:25%;
+}
+#content-worklist .project-txt .right-arrow{
+    color:white;
+    background: #b6b6b6;
+    font-size:1.4rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    left:52.5%; top:25%;
+}
+#content-worklist .project-txt p{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 900;
+    font-size:1rem;
+    position:absolute;
+    left:1%; top:50%;
+}
+
+/*----------*/
+#menu{
+    width:100%; 100vh;
+    position:fixed;
+    left:0; top:40%;
+    font-weight: 900;
+}
+#menu .about{
+    float:left;
+    color:#dadee1;
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;
+    left:2%; top:0%;
+    font-size:1rem;
+    transform: rotate(-90deg) translateY(-150%);
+    border-bottom:2px solid transparent;
+    opacity:.8;
+}
+#menu .about:hover{
+    border-bottom:2px solid #dadee1;
+    opacity:1;
+}
+#menu .work{
+    float:right;
+    color:#dadee1;
+    font-family: 'Open Sans', sans-serif;
+    position:absolute;
+    right:2%; top:0;
+    font-size:1rem;
+    transform: rotate(-270deg) translateY(-150%);
+    border-bottom:2px solid transparent;
+    opacity:.8;
+}
+#menu .work:hover{
+    border-bottom:2px solid #dadee1;
+    opacity: 1;
+}
+#contact .contact{
+    color:#dadee1;
+    font-family: 'Open Sans', sans-serif;
+    position:fixed;
+    left:50%; bottom:1%;
+    transform:translate(-50%);
+    font-size:1rem;
+    font-weight: 900;
+    text-align: center;
+    border-bottom:2px solid transparent;
+    opacity: .5;
+}
+#contact .contact:hover{
+    border-bottom:2px solid #dadee1;
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+/*==============1400=================*/
+
+
+@media (max-width:1400px){
+    #main div h1{
+        font-size: 4.2rem;
+    }
+}

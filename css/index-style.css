@@ -54,7 +54,7 @@ h1.typing-txt{
     color:white;
     display: inline-block;
     overflow: hidden;
-    animation: typingAni 5s steps(20, end) 1;
+    animation: typingAni 6s steps(25, end) 1;
     margin-bottom: 12px;
     text-shadow: 5px 2px 5px rgba(255,255,255,0.4);
 }
@@ -150,6 +150,7 @@ h1.typing-txt::after{
 #menu .about{
     float:left;
     color:white;
+    font-family: 'Open Sans', sans-serif;
     position: absolute;
     left:2%; top:0%;
     font-size:1rem;
@@ -164,6 +165,7 @@ h1.typing-txt::after{
 #menu .work{
     float:right;
     color:white;
+    font-family: 'Open Sans', sans-serif;
     position:absolute;
     right:2%; top:0;
     font-size:1rem;
@@ -177,6 +179,7 @@ h1.typing-txt::after{
 }
 #contact .contact{
     color:white;
+    font-family: 'Open Sans', sans-serif;
     position:fixed;
     left:50%; bottom:1%;
     transform:translate(-50%);
