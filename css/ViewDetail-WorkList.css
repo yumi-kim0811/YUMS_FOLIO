@@ -8,8 +8,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
 /*Poppins*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
-
+/*Open Sans*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body{
     width:100%;
@@ -36,6 +36,25 @@ header a img{
     width:35%;
     opacity:.4;
 }
+header .menu{
+    float: right;
+    position:absolute;
+    right:.5%;top:10%; 
+    display: flex;
+    flex-direction: column;
+}
+header .menu a{
+    width:22px; height: 70px;
+    opacity: .5;
+}
+header .menu a span{
+    background: #c0c0c0;
+    border-radius: 100px;
+    width:10px; height: 10px;
+}
+header .menu a:hover{
+    opacity: 1;
+}
 section{
     position:relative;
     left:0;top:0;
@@ -53,12 +72,6 @@ section{
 #content-worklist .bg img{
     width:100%;
 }
-#content-worklist .bg img:nth-of-type(1){
-}
-#content-worklist .bg img:nth-of-type(2){
-    position: absolute;
-    left:0; top:0;
-}
 #content-worklist .img-product{
     position:absolute;
     left:50%; top:0;
@@ -70,13 +83,9 @@ section{
     width:100%; height: 100%;
     margin-bottom: 1.5%;
 }
-#content-worklist .img-product img:nth-of-type(2){
-    position:absolute;
-    left:0; top:0;
-}
 #content-worklist .img-product a{
     width:200px; height:36px;
-    background: #31004a;
+    background: #975aa1;
     color:white;
     font-size:1.25rem;
     font-family: 'Open Sans', sans-serif;
@@ -87,13 +96,15 @@ section{
     left:50%; top:100%;
     transform: translateX(-50%);
 }
+#content-worklist .img-product a:hover{
+    font-size:1.3rem;
+}
 #content-worklist .project-txt{
     width:50%; height: 20%;
     position:absolute;
-    left:50%; top:72.5%;
+    left:50%; top:70%;
     transform: translateX(-50%);
     white-space: pre-line;
-    border:1px solid green;
     padding: 10px;
 }
 #content-worklist .project-txt em{
@@ -105,22 +116,14 @@ section{
     font-size:2.2rem;
     font-family: 'Poppins', sans-serif;
 }
-#content-worklist .project-txt .click-changes{
-    font-size:1.2rem;
-    background: #b6b6b6;
-    color:white;
-    padding: 2px 20px;
-    float:left;
-    position:absolute;
-    left:23%; top:25%;
-}
+
 #content-worklist .project-txt .left-arrow{
     color:white;
     background: #b6b6b6;
     font-size:1.4rem;
     font-weight: 900;
     position:absolute;
-    left:50%; top:25%;
+    left:22%; top:30%;
 }
 #content-worklist .project-txt .right-arrow{
     color:white;
@@ -131,7 +134,7 @@ section{
     align-items: center;
     justify-content: center;
     position:absolute;
-    left:52.5%; top:25%;
+    left:24.7%; top:30%;
 }
 #content-worklist .project-txt p{
     font-family: 'Nanum Gothic', sans-serif;
@@ -140,7 +143,60 @@ section{
     position:absolute;
     left:1%; top:50%;
 }
+#content-worklist .detail-project{
+    width:80%; height: 150vh;
+    position:relative;
+    left:10%; top:100%;
+    background: #975aa1;
+    border-radius: 10px;
+}
+#content-worklist .detail-project strong{
+    position: absolute;
+    left:50%; top:2.5%;
+    transform: translateX(-50%);
+    font-size:2rem;
+    font-family: 'Poppins', sans-serif;
+    color:white;
+    white-space: pre-line;
+    text-align: center;
+}
+#content-worklist .detail-project .left{
+    float:left;
+    position: absolute;
+    left:5%; top:0;
+    width:45%; height: 100vh;
+}
+#content-worklist .detail-project .left p{
+    color:white;
+    position:absolute;
+    left:50%; top:10%;
+    transform: translateX(-50%);
+    font-family: 'Poppins', sans-serif;
+}
+#content-worklist .detail-project .left img{
+    position:absolute;
+    left:5%; top:12.5%;
+    width:90%;
+}
 
+#content-worklist .detail-project .right{
+    float:right;
+    position:absolute;
+    right:5%; top:0;
+    width:45%; height: 100vh;
+}
+#content-worklist .detail-project .right p{
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    position:absolute;
+    left:50%; top:10%;
+    transform: translateX(-50%);
+}
+#content-worklist .detail-project .right img{
+    position:absolute;
+    right:5%; top:12.5%;
+    width:90%;
+}
 /*----------*/
 #menu{
     width:100%; 100vh;
@@ -188,21 +244,12 @@ section{
     font-weight: 900;
     text-align: center;
     border-bottom:2px solid transparent;
-    opacity: .5;
+    opacity: .8;
 }
 #contact .contact:hover{
     border-bottom:2px solid #dadee1;
     opacity: 1;
 }
-
-
-
-
-
-
-
-
-
 
 /*==============1400=================*/
 
