@@ -38,13 +38,9 @@ header .menu{
     flex-direction: column;
 }
 header .menu a{
-    width:22px; height: 70px;
+    width:22px; height: 50px;
     opacity: .5;
-}
-header .menu a span{
-    background: #c0c0c0;
-    border-radius: 100px;
-    width:10px; height: 10px;
+    font-size: 1.25rem;
 }
 header .menu a:hover{
     opacity: 1;
@@ -63,44 +59,100 @@ section{
 }
 #work .work-left{
     float:left;
+    position:relative;
     width:50%; height: 100%;
-    position:relative;
-}
-#work .work-left .img{
-    position:relative;
-    width:100%; height:100%;
-}
-#work .work-left .img img{
-    position:absolute;
-    left:0; top:0;
-    width:100%; height: 100%;
-}
-#work .work-left .work-move{
-    position:absolute;
-    left:10%; top:10%;
-    width:80%; height:80%;
-}
-#work .work-left .work-move p:nth-of-type(1){
-    position:absolute;
-    left:5%; top:20%;
-}
-#work .work-left .work-move p:nth-of-type(2){
-    position:absolute;
-    left:20%; top:48%;
+    background:#2b211f;
 }
 
-/*#work .work-left .daon-move{
+#work .work-left .img{
+    width:100%; height: 100%;
     position:absolute;
-    left:25%; top:34.5%;
+    right:50%;bottom:0;
+    z-index: 1;
+    transition:.5s;
+}
+
+#work .work-left div{
+    position:absolute;
+    left:0%; top:0%;
+    width:100%; height:100%;
     text-align: center;
+    opacity:0;
+    transition:.5s;
 }
-#work .work-left .daon-move p:nth-of-type(1){
-    width: 100%;
+
+#work .work-left div p{
+    position:absolute;
+    left:0%; top:0%;
+    width:100%; height:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index:2;
 }
-#work .work-left .daon-move p:nth-of-type(2){
-    width:100%;
-    margin-top: 3%;
-}*/
+
+#work .work-left div p img{
+    margin-left:800px;
+    opacity:0;
+}
+#work .work-left div p img:nth-of-type(1){
+    transition:.5s .3s ;
+    margin-left: 400px;
+}
+#work .work-left div p img:nth-of-type(2){
+    transition:.5s .5s ;
+    margin-left:800px;
+}
+#work .work-left .daon-move p img:nth-of-type(1){
+    position:absolute;
+    left:50%; top:35%;
+    transform: translateX(-50%);
+}
+#work .work-left .daon-move p img:nth-of-type(2){
+    position:absolute;
+    left:50%; top:46.5%;
+    transform: translateX(-50%);
+}
+#work .work-left .cola-move p img:nth-of-type(1){
+    width:30%;
+    margin-bottom:0%;
+}
+#work .work-left .cola-move p img:nth-of-type(2){
+    width:90%;
+    margin-top:10%;
+}
+#work .work-left .mac-move p img:nth-of-type(1){
+    width:40%;
+    position:absolute;
+    bottom:5%;left:3.5%;
+    opacity:.3;
+}
+#work .work-left .mac-move p img:nth-of-type(2){
+    width:85%;
+}
+#work .work-left .yums-move p img:nth-of-type(1){
+    width:53%;
+}
+#work .work-left .yums-move p img:nth-of-type(2){
+    width:53%;
+    margin-top:4%;
+}
+
+/* ----------work slide style start--------- */
+#work .work-left div.active{
+    opacity:1;
+}
+#work .work-left div.active .img{
+    right:0;
+}
+#work .work-left div.active p img{
+    opacity: 1;
+    margin:0;
+}
+/* ----------work slide style end--------- */
+
+
 
 
 #right-worklist{
@@ -109,6 +161,7 @@ section{
     position:absolute;
     right:0; top:0;
     background: #2b211f;
+    z-index:3;
 }
 
 #right-worklist .list{
@@ -118,6 +171,10 @@ section{
     display: flex;
     flex-direction: column;
 }
+#right-worklist .list div{
+    display:none;
+}
+
 #right-worklist .list small{
     font-size:1.08rem;
     font-weight: 600;
@@ -142,6 +199,33 @@ section{
     opacity: 1;
     border-bottom: 3px solid rgba(255,255,255,0.5);
 }
+#right-worklist .list .UI-UXbtn a:nth-of-type(1).active p{
+    color: #db97ff;
+}
+#right-worklist .list .UI-UXbtn a p.active:nth-of-type(1) strong{
+    color: #db97ff;
+}
+#right-worklist .list .UI-UXbtn a:nth-of-type(2).active p{
+    color: #d82634;
+}
+#right-worklist .list .UI-UXbtn a.active p:nth-of-type(2) strong{
+    color: #db97ff;
+}
+#right-worklist .list .UI-UXbtn a:nth-of-type(3).active p{
+    color: #dfb899;
+}
+#right-worklist .list .UI-UXbtn a.active p:nth-of-type(3) strong{
+    color: #dfb899;
+}
+#right-worklist .list .UI-UXbtn a:nth-of-type(4).active p{
+    color: #b8dcff;
+}
+#right-worklist .list .UI-UXbtn a.active p:nth-of-type(4) strong{
+    color: #b8dcff;
+}
+#right-worklist .list .UI-UXbtn a.active p span{
+    border:1px solid white;
+}
 #right-worklist .list a p{
     color:white;
     font-family: 'Open Sans', sans-serif;
@@ -158,10 +242,9 @@ section{
     vertical-align: middle;
     border-bottom: 3px solid transparent;
 }
-#right-worklist .list a p:hover strong{
-    border-bottom: 3px solid rgba(225,225,225,0.5);
+#right-worklist .list a p strong:hover{
+    
 }
-
 #right-worklist .list a p span{
     color:white;
     border-radius: 20px;
@@ -179,10 +262,6 @@ section{
     opacity: 0;
 }
 
-#right-worklist .list a p:hover span{
-    opacity: 1;
-}
-
 #right-worklist .list .ani b{
     color:white;
     font-size:1.3rem;
@@ -198,6 +277,7 @@ section{
     position:fixed;
     left:0; top:40%;
     font-weight: 900;
+    z-index: 10;
 }
 #menu .about{
     float:left;
@@ -240,6 +320,7 @@ section{
     text-align: center;
     border-bottom:2px solid transparent;
     opacity: .5;
+    z-index: 10;
 }
 #contact .contact:hover{
     border-bottom:2px solid white;
