@@ -329,3 +329,343 @@ section{
     border-bottom:2px solid white;
     opacity: 1;
 }
+
+
+
+
+
+
+/*----------================= mobile========================= */
+
+
+@media (max-width:1400px){
+
+
+    body{
+        width:100%;
+    }
+    .wrap{
+        position:relative;
+        left:0; top:0;
+        width:100%; height: 100vh;
+    }
+    header{
+        width:100%;
+        position:fixed;
+        left:0; top:0;
+        font-size:0;
+        z-index: 100;
+    }
+    header a{
+        width:10%; 
+        position:relative;
+        left: 0%; top:0%;
+        margin-top:.5%;
+    }
+    header a img{
+        width:35%;
+        opacity:.4;
+    }
+    header .menu{
+        float: right;
+        position:absolute;
+        right:.5%;top:10%; 
+        display: flex;
+        flex-direction: column;
+    }
+    header .menu a{
+        width:22px; height: 50px;
+        opacity: .5;
+        font-size: 1.25rem;
+    }
+    header .menu a:hover{
+        opacity: 1;
+    }
+
+    section{
+        position:relative;
+        left:0;top:0;
+        width:100%; height: 100%;
+    }
+
+    #work{
+        width:100%; height: 100vh;
+        position:relative;
+        left:0; top:0;
+        overflow: hidden;
+    }
+    #work .work-left{
+        float:none;
+        position:relative;
+        width:100%; height: 50%;
+        background:#2b211f;
+    }
+
+    #work .work-left .img{
+        width:100%; height: 100%;
+        position:absolute;
+        right:95%;bottom:0;
+        z-index: 1;
+        transition:.5s;
+    }
+
+    #work .work-left div{
+        position:absolute;
+        left:0%; top:0%;
+        width:100%; height:100%;
+        text-align: center;
+        opacity:0;
+        transition:.5s;
+    }
+
+    #work .work-left div p{
+        position:absolute;
+        left:0%; top:0%;
+        width:100%; height:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index:2;
+    }
+
+    #work .work-left div p img{
+        margin-left:800px;
+        opacity:0;
+    }
+    #work .work-left div p img:nth-of-type(1){
+        transition:.5s .3s ;
+        margin-left: 400px;
+    }
+    #work .work-left div p img:nth-of-type(2){
+        transition:.5s .5s ;
+        margin-left:800px;
+    }
+    #work .work-left .daon-move p img:nth-of-type(1){
+        position:absolute;
+        left:50%; top:35%;
+        transform: translateX(-50%);
+    }
+    #work .work-left .daon-move p img:nth-of-type(2){
+        position:absolute;
+        left:50%; top:46.5%;
+        transform: translateX(-50%);
+    }
+    #work .work-left .cola-move p img:nth-of-type(1){
+        width:30%;
+        margin-bottom:0%;
+    }
+    #work .work-left .cola-move p img:nth-of-type(2){
+        width:90%;
+        margin-top:10%;
+    }
+    #work .work-left .mac-move p img:nth-of-type(1){
+        width:40%;
+        position:absolute;
+        bottom:5%;left:3.5%;
+        opacity:.3;
+    }
+    #work .work-left .mac-move p img:nth-of-type(2){
+        width:85%;
+    }
+    #work .work-left .yums-move p img:nth-of-type(1){
+        width:53%;
+    }
+    #work .work-left .yums-move p img:nth-of-type(2){
+        width:53%;
+        margin-top:4%;
+    }
+
+    /* ----------work slide style start--------- */
+    #work .work-left div.active{
+        opacity:1;
+    }
+    #work .work-left div.active .img{
+        right:0;
+    }
+    #work .work-left div.active p img{
+        opacity: 1;
+        margin:0;
+    }
+    /* ----------work slide style end--------- */
+
+    #right-worklist{
+        float:none;
+        width:100%; height: 50%;
+        position:absolute;
+        right:0; top:50%;
+        background: #2b211f;
+        z-index:3;
+    }
+
+    #right-worklist .list{
+        position: absolute;
+        right:15%; top:10%;
+        width:70%; height: 80%;
+        display: flex;
+        flex-direction: column;
+    }
+    #right-worklist .list div{
+        display:none;
+    }
+
+    #right-worklist .list small{
+        font-size:1.08rem;
+        font-weight: 600;
+        color:white;
+        opacity: .5;
+        text-align: center;
+        margin-bottom: 20%;
+        font-family: 'Open Sans', sans-serif;
+        white-space: pre-line;
+    }
+
+    #right-worklist .list .UI-UX{
+        padding-bottom: 3%;
+    }
+    #right-worklist .list .UI-UX b{
+        color:#dfb899;
+        font-size:1.3rem;
+        font-family: 'Open Sans', sans-serif;
+        opacity:1;
+    }
+    #right-worklist .list .UI-UXbtn a:nth-of-type(1).active p{
+        color: #db97ff;
+    }
+    #right-worklist .list .UI-UXbtn a:nth-of-type(1).active strong{
+        color: #db97ff;
+    }
+    #right-worklist .list .UI-UXbtn a:nth-of-type(2).active p{
+        color: #d82634;
+    }
+    #right-worklist .list .UI-UXbtn a.active:nth-of-type(2) strong{
+        color: #d82634;
+    }
+    #right-worklist .list .UI-UXbtn a:nth-of-type(3).active p{
+        color: #dfb899;
+    }
+    #right-worklist .list .UI-UXbtn a.active:nth-of-type(3) strong{
+        color: #dfb899;
+    }
+    #right-worklist .list .UI-UXbtn a:nth-of-type(4).active p{
+        color: #b8dcff;
+    }
+    #right-worklist .list .UI-UXbtn a.active:nth-of-type(4) strong{
+        color: #b8dcff;
+    }
+    #right-worklist .list .UI-UXbtn a.active:nth-of-type(1) p span{
+        border:1px solid #db97ff;
+        color:#db97ff;
+    }
+    #right-worklist .list .UI-UXbtn a.active:nth-of-type(2) p span{
+        border:1px solid #d82634;
+        color:#d82634;
+    }
+    #right-worklist .list .UI-UXbtn a.active:nth-of-type(3) p span{
+        border:1px solid #dfb899;
+        color:#dfb899;
+    }
+    #right-worklist .list .UI-UXbtn a.active:nth-of-type(4) p span{
+        border:1px solid #b8dcff;
+        color:#b8dcff;
+    }
+    #right-worklist .UI-UXbtn a p{
+        color:white;
+        font-family: 'Open Sans', sans-serif;
+        font-size:1.5rem;
+        font-weight: 600;
+        margin-bottom: 4%;
+        line-height:50px;
+    }
+    #right-worklist .UI-UXbtn a p strong{
+        color:white;
+        font-size:2.2rem;
+        font-family: 'Open Sans', sans-serif;
+        margin-left: 20px;
+        vertical-align: middle;
+    }
+
+    #right-worklist .UI-UXbtn a p span{
+        color:white;
+        border-radius: 20px;
+        font-size:1rem;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 600;
+        margin-left: 10px;
+        position:relative;
+        left:0; top:0px;
+        width:120px; height: 25px;
+        line-height: 1.5;
+        border:1px solid white;
+        text-align: center;
+        vertical-align: middle;
+        opacity: 0;
+    }
+
+    #right-worklist .list .ani b{
+        color:#dfb899;
+        font-size:1.3rem;
+        font-family: 'Open Sans', sans-serif;
+        opacity: .5;
+    }
+
+
+
+    /*--------------------------*/
+    #menu{
+        width:100%; 100vh;
+        position:fixed;
+        left:0; top:40%;
+        font-weight: 900;
+        z-index: 10;
+        display: none;
+    }
+    #menu .about{
+        float:left;
+        color:white;
+        font-family: 'Open Sans', sans-serif;
+        position: absolute;
+        left:2%; top:0%;
+        font-size:1rem;
+        transform: rotate(-90deg) translateY(-150%);
+        border-bottom:2px solid transparent;
+        opacity:.5;
+    }
+    #menu .about:hover{
+        border-bottom:2px solid white;
+        opacity:1;
+    }
+    #menu .work{
+        float:right;
+        color:white;
+        font-family: 'Open Sans', sans-serif;
+        position:absolute;
+        right:2%; top:0;
+        font-size:1rem;
+        transform: rotate(-270deg) translateY(-150%);
+        border-bottom:2px solid transparent;
+        opacity:.5;
+    }
+    #menu .work:hover{
+        border-bottom:2px solid white;
+        opacity: 1;
+    }
+    #contact .contact{
+        color:white;
+        font-family: 'Open Sans', sans-serif;
+        position:fixed;
+        left:50%; bottom:1%;
+        transform:translate(-50%);
+        font-size:1rem;
+        font-weight: 900;
+        text-align: center;
+        border-bottom:2px solid transparent;
+        opacity: .5;
+        z-index: 10;
+    }
+    #contact .contact:hover{
+        border-bottom:2px solid white;
+        opacity: 1;
+    }
+    
+}

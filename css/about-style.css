@@ -72,10 +72,10 @@ section{
     background:rgba(6,30,53,0.8);
     border-radius: 20px;
 }
-/*@keyframes slide-side{
+@keyframes slide-side{
     0%{opacity:0; transform: translateX(-100%)}
     100%{opacity:1; transform: translateX(0%) }
-}*/
+}
 #pro-div .left{
     float:left;
     width:27%; height:50%;
