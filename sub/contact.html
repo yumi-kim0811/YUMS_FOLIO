@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,13 +35,13 @@
                   
                   <small class="blinkle">*더 궁금하신 사항 있으시면 언제든 연락주세요 :) </small>
               </div>
-              <div class="contact-input">
-                  <input class="contact" type="text" placeholder="Name*">
-                  <input class="contact" type="email" placeholder="E-mail*">
-                  <textarea class="contact" placeholder="Send a message"></textarea>
+              <form class="contact-input" action="contact_ok.php" method="POST">
+                  <input class="contact" type="text" id="name" name="name" placeholder="Name*" required>
+                  <input class="contact" type="email" id="email" name="email" placeholder="E-mail*" required>
+                  <textarea class="contact" id="message" name="message" placeholder="Send a message" required></textarea>
                   
                   <input class="contact" type="submit" value="SEND">
-              </div>
+              </form>
               
           </div>
            
@@ -64,3 +65,7 @@
     
 </body>
 </html>
+
+
+
+

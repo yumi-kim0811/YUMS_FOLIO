@@ -1,22 +1,21 @@
 $(function(){
     //start
     
-    $('.list div').eq(0).show();
+    $('.UI-UXbtn').eq(0).show();
     $('.list > a').on('click',function(e){
         e.preventDefault();
         $('.list div').stop().slideUp();
-       $(this).next('div').stop().slideDown();
+        $(this).next('div').stop().slideDown();
     });
     
     var blen = true;
     var wIdx;
     $('.work-left div').eq(0).addClass('active');
-    $('.list div a').on({
+    $('.UI-UXbtn a').on({
         click:function(e){
             wIdx = $(this).index();
             workList(wIdx);
         }
-   
     });
     $('.list div a p span').click(function(e){
             e.preventDefault();
@@ -29,22 +28,15 @@ $(function(){
             $('.work-left div').eq(wIdx).css({zIndex:2});
             $('.work-left div').eq(wIdx).addClass('active');
             $('.work-left div').not(':eq('+wIdx+')').css({zIndex:1});
+            
             $('.UI-UXbtn a strong').removeClass('active');
             $('.UI-UXbtn a strong').eq(wIdx).addClass('active');
+            
             $('.UI-UXbtn a').removeClass('active');
             $('.UI-UXbtn a').eq(wIdx).addClass('active');
-            $('.UI-UXbtn a').find('p span').css({
-                opacity:0
-            });
-            $('.UI-UXbtn a').eq(wIdx).find('p span').css({
-                opacity:1
-            });
-            $('.UI-UXbtn a').find('p strong').css({
-                borderBottom:0
-            });
-            $('.UI-UXbtn a').eq(wIdx).find('p strong').css({
-                borderBottom:"3px solid rgba(225,225,225,0.5)"
-            });
+            
+            $('.UI-UXbtn a').find('p span').css({opacity:0});
+            $('.UI-UXbtn a').eq(wIdx).find('p span').css({opacity:1});
             
             setTimeout(function(){            
                 $('.work-left div').not(':eq('+wIdx+')').removeClass('active');
@@ -52,6 +44,23 @@ $(function(){
             },250);
         }
     }
+    
+    $('.ani').click(function(){
+       $('.UI-UX b').css({
+           opacity:.25
+       });
+       $('.ani b').css({
+           opacity:1
+       });
+    });
+    $('.UI-UX').click(function(){
+       $('.ani b').css({
+           opacity:.25
+       });
+       $('.UI-UX b').css({
+           opacity:1
+       });
+    });
     
     
     function detail(){

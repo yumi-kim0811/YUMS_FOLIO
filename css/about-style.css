@@ -63,21 +63,23 @@ section{
     
 }
 #pro-div{
-    width:90%; height: 80%;
+    width:90%; height: 85%;
     position:absolute;
-    left:5%; top:10%;
+    left:5%; top:7.5%;
     animation: slide-side 1s;
-    background:rgba(6,30,53,0.75);
+    /*background:rgba(6,30,53,0.75);*/
+    background:rgba(0,53,103,0.2);
+    border-radius: 20px;
 }
-@keyframes slide-side{
+/*@keyframes slide-side{
     0%{opacity:0; transform: translateX(-100%)}
     100%{opacity:1; transform: translateX(0%) }
-}
+}*/
 #pro-div .left{
     float:left;
-    width:27%; height:51%;
+    width:27%; height:50%;
     position: absolute;
-    left:3.5%;top:8%;
+    left:3.5%;top:12%;
 }
 #pro-div .left img{
     width:95%;
@@ -85,7 +87,7 @@ section{
 #pro-div .left p{
     width:100%; height: 8.8rem;
     position:absolute;
-    left:2%; top:80%;
+    left:2%; top:78%;
     white-space: pre-line;
     color:white;
     font-family: 'Roboto', sans-serif;
@@ -95,7 +97,7 @@ section{
 }
 #pro-div .left-bottom{
     position: absolute;
-    left:2.5%; top:80%;
+    left:2.5%; top:74%;
     width:27%;
 }
 #pro-div .left-bottom .pro-icon{
@@ -105,6 +107,9 @@ section{
 }
 #pro-div .left-bottom .pro-icon .e-mail{
     width:33.3%; height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #pro-div .left-bottom .pro-icon .e-mail h3{
     color:#fff;
@@ -114,55 +119,103 @@ section{
     margin-bottom: 12%;
 }
 #pro-div .left-bottom .pro-icon .e-mail a{
-    width:30%;
+    width:70px; height: 70px;
     margin-bottom: 7%;
+    background: rgba(255,255,255,0);
+    border:2px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    transition: .5;
+}
+#pro-div .left-bottom .pro-icon .e-mail a:hover{
+    background:#1ba7ea;
 }
 #pro-div .left-bottom .pro-icon .e-mail a img{
-    width:100%;
-    
+    width:60%;
+    transform: rotate(-45deg);
 }
 
 #pro-div .left-bottom .pro-icon .e-mail span{
     color:#fff;
     font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
 }
 #pro-div .left-bottom .pro-icon .phone{
     width:33.3%; height: 150%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #pro-div .left-bottom .pro-icon .phone h3{
     color:#fff;
     font-size:1.2rem;
     font-family: 'Roboto', sans-serif;
     margin-top: 7%;
-    margin-bottom: 10%;
+    margin-bottom: 12%;
 }
+#pro-div .left-bottom .pro-icon .phone a{
+    width:70px; height: 70px;
+    background: rgba(255,255,255,0);
+    border:2px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    transition: .5;
+}
+#pro-div .left-bottom .pro-icon .phone a:hover{
+    background:#ff9000;
+}
+
 #pro-div .left-bottom .pro-icon .phone a img{
-    width:15%;
-    margin-bottom: 10%;
+    width: 40%;
+    transform: rotate(-45deg);
 }
 #pro-div .left-bottom .pro-icon .phone span{
     color:#fff;
     font-family: 'Roboto', sans-serif;
+    margin-top:20%;
 }
 #pro-div .left-bottom .pro-icon .github{
     width:33.3%; height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #pro-div .left-bottom .pro-icon .github h3{
     color:#fff;
     font-size:1.2rem;
     font-family: 'Roboto', sans-serif;
     margin-top: 7%;
-    margin-bottom: 10%;
+    margin-bottom: 12%;
+}
+#pro-div .left-bottom .pro-icon .github a{
+    width:70px; height: 70px;
+    background: rgba(255,255,255,0);
+    border:2px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(45deg);
+    transition: .5;
+}
+#pro-div .left-bottom .pro-icon .github a:hover{
+    background: #69009d;
 }
 #pro-div .left-bottom .pro-icon .github a img{
-    width:28%;
-    margin-bottom: 10%;
+    width: 72%;
+    transform: rotate(-45deg);
 }
 #pro-div .left-bottom .pro-icon .github span{
     color:#fff;
     font-family: 'Roboto', sans-serif;
+    margin-top: 20%;
 }
-
 #pro-div .right{
     float:right;
     width:72%; height: 97%;
@@ -176,7 +229,7 @@ section{
 }
 #pro-div .right .r-left-1 strong{
     margin-top: 6%;
-    font-size:2rem;
+    font-size:1.6vw;
     color:#fff;
     font-family: 'Roboto', sans-serif;
 }
@@ -206,7 +259,7 @@ section{
     margin-top: 2%;
     margin-left: 2%;
     color:#fff;
-    font-size:2rem;
+    font-size:1.6vw;
     font-family: 'Roboto', sans-serif;
 }
 #pro-div .right .r-2 span{
@@ -262,30 +315,6 @@ section{
     position:absolute;
     left:77%;top:10%;
 }
-/*-----------------------------------------*/
-/*.star-twk{
-    width:100%; height: 100vh;
-    position:absolute;
-    left:0%; top:0;
-    overflow:hidden;
-}
-.star-twk span:nth-of-type(1){
-    position:absolute;
-    left:59.8%; top:17%;
-    opacity: .35;
-}
-.star-twk span:nth-of-type(2){
-    position:absolute;
-    left:93%; top:5%;
-    opacity: .35;
-}
-.star-twk span:nth-of-type(3){
-    position:absolute;
-    left:42.9%; bottom:31.2%;
-    opacity: .35;
-}*/
-/*-----------------------------------------*/
-
 #menu{
     width:100%; 100vh;
     position:fixed;

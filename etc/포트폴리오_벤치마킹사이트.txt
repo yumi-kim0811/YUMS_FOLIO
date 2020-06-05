@@ -93,3 +93,20 @@ css/anmaition slideinUp
 
 https://codepen.io/anujashukla/pen/yeyvpx
 
+==================================================================================
+
+[Text] jQuery를 이용한 화면 전환 텍스트 애니메이션 소스 Animated Intro With jQuery
+https://codepen.io/Mhmdhasan/pen/LNrJbo?limit=all&page=73&q=animation
+
+
+↓ Illustrator, SVG & CSS Tutorial - Handwritten Effect ↓
+https://www.youtube.com/watch?v=DOv6eYgCSz4 
+
+
+ㅋㅎㅋㅎhttps://webstoryboy.github.io/portfolio/port10/portfolio/index.html
+
+    
+바둑판무늬
+background: #fecece;  => 배경색
+background-image: linear-gradient(rgba(255,255,255,.4)==>선색깔 1px==>선굵기, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.4) 1px, transparent 1px);
+background-size: 25px 25px==>네모크기, 25px 25px, 2px 2px;

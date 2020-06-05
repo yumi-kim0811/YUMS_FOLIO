@@ -67,7 +67,7 @@ section{
 #work .work-left .img{
     width:100%; height: 100%;
     position:absolute;
-    right:50%;bottom:0;
+    right:95%;bottom:0;
     z-index: 1;
     transition:.5s;
 }
@@ -152,9 +152,6 @@ section{
 }
 /* ----------work slide style end--------- */
 
-
-
-
 #right-worklist{
     float:right;
     width:50%; height: 100%;
@@ -190,43 +187,52 @@ section{
     padding-bottom: 3%;
 }
 #right-worklist .list .UI-UX b{
-    color:white;
+    color:#dfb899;
     font-size:1.3rem;
     font-family: 'Open Sans', sans-serif;
-    opacity: .5;
-}
-#right-worklist .list .UI-UX b:hover{
-    opacity: 1;
-    border-bottom: 3px solid rgba(255,255,255,0.5);
+    opacity:1;
 }
 #right-worklist .list .UI-UXbtn a:nth-of-type(1).active p{
     color: #db97ff;
 }
-#right-worklist .list .UI-UXbtn a p.active:nth-of-type(1) strong{
+#right-worklist .list .UI-UXbtn a:nth-of-type(1).active strong{
     color: #db97ff;
 }
 #right-worklist .list .UI-UXbtn a:nth-of-type(2).active p{
     color: #d82634;
 }
-#right-worklist .list .UI-UXbtn a.active p:nth-of-type(2) strong{
-    color: #db97ff;
+#right-worklist .list .UI-UXbtn a.active:nth-of-type(2) strong{
+    color: #d82634;
 }
 #right-worklist .list .UI-UXbtn a:nth-of-type(3).active p{
     color: #dfb899;
 }
-#right-worklist .list .UI-UXbtn a.active p:nth-of-type(3) strong{
+#right-worklist .list .UI-UXbtn a.active:nth-of-type(3) strong{
     color: #dfb899;
 }
 #right-worklist .list .UI-UXbtn a:nth-of-type(4).active p{
     color: #b8dcff;
 }
-#right-worklist .list .UI-UXbtn a.active p:nth-of-type(4) strong{
+#right-worklist .list .UI-UXbtn a.active:nth-of-type(4) strong{
     color: #b8dcff;
 }
-#right-worklist .list .UI-UXbtn a.active p span{
-    border:1px solid white;
+#right-worklist .list .UI-UXbtn a.active:nth-of-type(1) p span{
+    border:1px solid #db97ff;
+    color:#db97ff;
 }
-#right-worklist .list a p{
+#right-worklist .list .UI-UXbtn a.active:nth-of-type(2) p span{
+    border:1px solid #d82634;
+    color:#d82634;
+}
+#right-worklist .list .UI-UXbtn a.active:nth-of-type(3) p span{
+    border:1px solid #dfb899;
+    color:#dfb899;
+}
+#right-worklist .list .UI-UXbtn a.active:nth-of-type(4) p span{
+    border:1px solid #b8dcff;
+    color:#b8dcff;
+}
+#right-worklist .UI-UXbtn a p{
     color:white;
     font-family: 'Open Sans', sans-serif;
     font-size:1.5rem;
@@ -234,18 +240,15 @@ section{
     margin-bottom: 4%;
     line-height:50px;
 }
-#right-worklist .list a p strong{
+#right-worklist .UI-UXbtn a p strong{
     color:white;
     font-size:2.2rem;
     font-family: 'Open Sans', sans-serif;
     margin-left: 20px;
     vertical-align: middle;
-    border-bottom: 3px solid transparent;
 }
-#right-worklist .list a p strong:hover{
-    
-}
-#right-worklist .list a p span{
+
+#right-worklist .UI-UXbtn a p span{
     color:white;
     border-radius: 20px;
     font-size:1rem;
@@ -263,7 +266,7 @@ section{
 }
 
 #right-worklist .list .ani b{
-    color:white;
+    color:#dfb899;
     font-size:1.3rem;
     font-family: 'Open Sans', sans-serif;
     opacity: .5;

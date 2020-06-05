@@ -114,8 +114,8 @@ section{
     line-height:1;
     font-weight: 900;
     vertical-align:middle;
-    margin-left:50px;   
-    padding:4px 0 6px 0;
+    margin-left:15px;   
+    padding:3.5px 0 6px 0;
 }
 #content-worklist .project-txt .right-arrow{
     color:white;
@@ -124,7 +124,7 @@ section{
     font-size:1.4rem;
     font-weight: 900;
     vertical-align:middle;
-    padding:4px 0 6px 0;
+    padding:3.5px 0 6px 0;
 }
 #content-worklist .project-txt p{
     font-family: 'Nanum Gothic', sans-serif;
