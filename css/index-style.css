@@ -27,22 +27,23 @@ header a{
 }
 header a img{
     width:60px;
-    opacity:.4;
+    opacity:.25;
 }
 header .menu{
+    width:24px;
     position:fixed;
-    right:0%;top:10%; 
+    right:0%; top:10%; 
     display: flex;
 }
 header .menu a:hover{
     opacity: 1;
 }
 header .menu a img{
-    opacity:0.65;
-    width:25px;
+    opacity:.6;
+    width:100%;
 }
 header .menu a img:hover{
-    opacity: 1;
+    opacity:1;
 }
 
 #menu-div{

@@ -14,13 +14,7 @@ $(function(){
            top:'-100vh'
        });
     });
-    
-    $('#menu-div nav a').eq(0).click(function(e){
-        e.preventDefault();
-       $('#menu-div').css({
-           top:'-100vh'
-       });
-    });
+
     
     //end
 });

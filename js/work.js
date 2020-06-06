@@ -1,6 +1,29 @@
 $(function(){
     //start
     
+    //버거 메뉴 js--------------------------//
+    //별 세개 누르면 메뉴 오픈 
+    $('.menu a').click(function(){
+        $('#menu-div').css({
+            top:0
+        });
+    });
+    
+    //엑스버튼 누르면 메뉴 닫힘
+    $('#menu-div button').click(function(){
+       $('#menu-div').css({
+           top:'-100vh'
+       });
+    });
+    //-------------------------------------//
+    
+    //blinkle 깜빡깜빡 텍스트
+    setInterval(function(){
+      $(".blinkle").toggle().show();
+    }, 2500);
+    
+    
+    // work-list 오른쪽 메뉴들
     $('.UI-UXbtn').eq(0).show();
     $('.list > a').on('click',function(e){
         e.preventDefault();
@@ -115,17 +138,7 @@ $(function(){
     }
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     
     //end
 })
