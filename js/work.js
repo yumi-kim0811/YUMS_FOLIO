@@ -17,12 +17,6 @@ $(function(){
     });
     //-------------------------------------//
     
-    //blinkle 깜빡깜빡 텍스트
-    setInterval(function(){
-      $(".blinkle").toggle().show();
-    }, 2500);
-    
-    
     // work-list 오른쪽 메뉴들
     $('.UI-UXbtn').eq(0).show();
     $('.list > a').on('click',function(e){
