@@ -98,7 +98,7 @@ $(function(){
     function dataChange(d, k){
         var content = '';
         content = "<div class='bg'><img src='"+d.work[k][0]+"'></div>";
-        content += "<div class='img-product'><img src='"+d.work[k][1]+"'><a href='"+d.work[k][8]+"' style=background:"+d.work[k][3]+">"+d.work[k][2]+"</a></div>";
+        content += "<div class='img-product'><img src='"+d.work[k][1]+"'><a href='"+d.work[k][8]+"' target='_blank' style=background:"+d.work[k][3]+">"+d.work[k][2]+"</a></div>";
         content += "<div class='project-txt'>";
         content += "<em>project #"+(parseInt(k)+1)+"</em>";
         content += "<strong>"+d.work[k][2]+" <a class='left-arrow' href='#'>＜</a> <a class='right-arrow' href='#'>＞</a></strong> ";
